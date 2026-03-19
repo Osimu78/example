@@ -4,20 +4,20 @@
 
 /* ── TOKENS ─────────────────────────────────────────── */
 :root {
-  --cyan:      #00E5FF;
-  --violet:    #7B2FFF;
-  --orange:    #FF6B35;
-  --green:     #00C896;
-  --bg:        #06080F;
-  --bg-2:      #0C0F1C;
-  --bg-card:   #10152A;
-  --border:    rgba(255,255,255,0.07);
-  --text:      #E8EAF6;
-  --text-muted:#8891AF;
+  --cyan:      #00FFAB; /* Emerald */
+  --violet:    #0061FF; /* Cobalt */
+  --orange:    #FFD700; /* Gold */
+  --green:     #00FFAB;
+  --bg:        #05070A;
+  --bg-2:      #0A0D16;
+  --bg-card:   #0F1425;
+  --border:    rgba(255,255,255,0.08);
+  --text:      #F0F2F8;
+  --text-muted:#919BB0;
   --radius:    16px;
   --radius-sm: 10px;
-  --shadow:    0 8px 40px rgba(0,0,0,0.6);
-  --transition:0.35s cubic-bezier(.25,.8,.25,1);
+  --shadow:    0 12px 48px rgba(0,0,0,0.7);
+  --transition:0.4s cubic-bezier(.2,.8,.2,1);
 }
 
 /* ── RESET ───────────────────────────────────────────── */
@@ -553,9 +553,9 @@ p  { color: var(--text-muted); }
 }
 .obj-3 { /* Diamond */
   width: 80px; height: 80px;
-  background: linear-gradient(135deg, var(--orange), #FF3399);
+  background: linear-gradient(135deg, var(--orange), #FFAA00);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  filter: drop-shadow(0 0 20px rgba(255,107,53,0.5));
+  filter: drop-shadow(0 0 20px rgba(255,215,0,0.5));
   animation: float 5s ease-in-out infinite 0.5s;
 }
 .obj-4 { /* Sphere rings */
@@ -569,9 +569,9 @@ p  { color: var(--text-muted); }
 @keyframes pulse-orb { 0%,100%{box-shadow:0 0 20px rgba(0,200,150,.4)} 50%{box-shadow:0 0 40px rgba(0,200,150,.7)} }
 .obj-5 { /* Gem */
   width: 70px; height: 80px;
-  background: linear-gradient(180deg, #cc44ff, #7B2FFF);
+  background: linear-gradient(180deg, #00C2FF, var(--violet));
   clip-path: polygon(50% 0%, 100% 30%, 85% 100%, 15% 100%, 0% 30%);
-  filter: drop-shadow(0 0 25px rgba(123,47,255,0.7));
+  filter: drop-shadow(0 0 25px rgba(0,97,255,0.7));
   animation: float 6s ease-in-out infinite 1s;
 }
 .obj-6 { /* Building */
